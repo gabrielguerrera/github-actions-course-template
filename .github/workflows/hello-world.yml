@@ -9,6 +9,6 @@ jobs:
     steps:
         - name: check out repository code # nome do step
           uses: actions/checkout@v4 # usa o checkout no repositorio com a versao 4, se nao por a versao a ultima versao vai ser usada
-        - run: echo "${cat hello_world.txt)" #printa o que ta no arquivo hello_world
+        - run: echo "$(cat hello_world.txt)" #printa o que ta no arquivo hello_world
         
     
